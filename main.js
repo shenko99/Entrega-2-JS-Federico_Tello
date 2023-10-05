@@ -36,7 +36,16 @@
 // const archer = new heroe(100,70,"arco");
 // const wizzard = new heroe(50,120,"baston");
 
+const clases = [
+  {job: "Guerrero", arma:"espada"},
+  {job: "Ladron", arma:"daga"},
+  {job: "Arquero", arma:"arco"},
+  {job: "Mago", arma:"baston"}
+];
 
+let claseElegida = prompt("seleciona la clase que quieras usar, Guerrero, Ladron, Arquero o Mago");
+
+console.log( clases.find((clase) => clase.job === claseElegida) );
 
 const jugador = {
     nombre: prompt("Elige un nombre para tu personaje:"),
@@ -64,7 +73,15 @@ const jugador = {
     return curacion;
   }
   
- 
+  
+
+  const mapas = ["Bosque", "Desierto", "Castillo", "Cueva"]
+
+  mapas.forEach((mapa) => {
+    console.log("mapas disponibles: " + mapa);
+  }
+  );
+
   while (jugador.hp > 0 && mob.hp > 0) {
     const accion = prompt("¿Que vas a hacer " + jugador.nombre + " ?" + " Atacar o Curarte, Escribe 1 para atacar o 2 para curarte con un estus: ");
   
