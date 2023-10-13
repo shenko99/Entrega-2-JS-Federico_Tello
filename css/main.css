@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body{
+    background-color: rgb(201, 111, 27);
+    color: purple;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: purple;
+    color: white;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.objetivo{
+    color: black;
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.seleccionpj{
+    margin-bottom: 2rem;
+}
+
+.arena{
+    background-color: purple;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+/* .arena .gif1{
+    display: flex;
+    position:fixed;
+    justify-self: flex-start ; */
+/* } */
+.arena .nombre{
+    position: absolute;
+    color: black;
+    background-color:white;
+    line-height: 1;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 5px solid 
+
+}
+
+.arena .nombre-jugador{
+    right: 85%;
+}
+
+.arena .nombre-mob{
+    left: 85%;
+}
+
+.arena .pelea{
+    font-size: 1.5rem;
+}
+
+.arma-elegida{
+    margin-bottom: 2rem;
+}
+
+.arma-elegida h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom:0.5;
+}
+
+.armas{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma{
+    font-size: 2rem;
+    background-color: beige;
+    border: 0;
+    padding: 0.5;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.resultados{
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.resultados .resultado{
+    color: white;
+    background-color: black;
+    border-radius: 0.5rem;
+    padding-inline-end: 0.5rem;
+}
+
+
+.reset{
+    border: 0;
+    line-height: 1;
+    background-color:black;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    
+}
+
+.disabled{
+    display: none;
+}
+
+.resultados{
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 500;
+}

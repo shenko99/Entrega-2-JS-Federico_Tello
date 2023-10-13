@@ -3,11 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Juego de Rol con JS</title>
 </head>
 <body>
     
+    <header>
+        <h1>Aventura Fantastica</h1>
+        
+        <input type="text" id="nombreingresado" placeholder="Ingresa tu nombre">
+        <button id="registro">Registrar</button>
+    </header>
 
-    <script src="./main.js"> </script>
+    <main>
+        
+
+
+        <p class="objetivo" id="objetivo"> Debes reducir el HP del enemigo a 0 💀</p>
+    
+        <img class="gif1" src="/gif/link.gif" alt="saber" style="padding-bottom: 1rem;">  
+        <div class="arena">
+            
+        <p class="nombre nombre-jugador" id="nombremostrado">Jugador</p>
+        <p class="nombre nombre-mob">Mob</p>
+        <p class="pelea">
+            <span id="hp-jugador">5</span>
+            <span>-</span>
+            <span id="hp-mob">5</span>
+        </p>
+        </div>
+        <div>
+            <img src="/gif/chizito y palito.gif" alt="lordofcinder">
+        </div>
+        <div class="arma-elegida" id="arma-elegida">
+            <h2>elegi tu arma para atacar</h2>
+            <div class="armas">
+                <button class="arma" id="espada">Espada ⚔</button>
+                <button class="arma" id="daga">Daga 🗡</button>
+                <button class="arma" id="arco">Arco 🏹</button>
+            </div>
+        </div>
+
+        <div class="resultados" id="resultados">
+        <p>
+            Atacaste con tu <span class="eleccion" id="eleccion-jugador"> espada</span>
+            <br> El no-muerto ataco con <span class="eleccion" id="eleccion-mob"> daga</span>
+        </p>
+        <p id="daño"> Hiciste daño restaste 1 hp a tu enemigo!!</p>
+    </div>
+        <div>
+            <button class="reset" id="reset"> Volver a jugar</button>
+        </div>
+
+    </main>
+
+
+    <script src="./main2.js"> </script>
 </body>
 </html>
